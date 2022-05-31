@@ -6,11 +6,12 @@ export default function TodoItem({
   isCompleted,
 }) {
   const taskStyle = {
-    textDecorationLine: isCompleted === true ? "line-through" : "none",
+    textDecorationLine: isCompleted === true ? "line-through" : "checked",
     color: isCompleted === true ? "blue" : "purple",
     fontWeight: "bold",
     fontSize: "20px",
   };
+
   return (
     <>
       <div
@@ -23,12 +24,12 @@ export default function TodoItem({
         </h1>
 
         <div>
-          <input
-            type="checkbox"
+          <button
             onClick={() => handleMarkComplete(taskId)}
             className=" border-2 border-solid border-blue-200 font-bold rounded-lg  text-white font-bold   m-2 text-center font-bold bg-black text-white   border-4 mt-4   hover:bg-blue-600 "
-          />
-          Mark Complete
+          >
+            Mark Complete
+          </button>
           <button
             type="button"
             onClick={() => handleDeleteItem(taskId)}

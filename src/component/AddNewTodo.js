@@ -23,7 +23,7 @@ export default function AddNewTodo({ handleAddNewTodo, handleDeleletAll }) {
         />
         <button
           className="text-center font-bold bg-black text-white m-2 border-2 rounded-lg border-solid border-blue-200   border-4 mt-4   hover:bg-red-600 "
-          type="button"
+          type="submit"
         >
           Add Todo
         </button>
