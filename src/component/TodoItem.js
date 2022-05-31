@@ -6,7 +6,7 @@ export default function TodoItem({
   isCompleted,
 }) {
   const taskStyle = {
-    textDecorationLine: isCompleted === true ? "line-through" : "checked",
+    textDecorationLine: isCompleted === true ? "line-through" : "none",
     color: isCompleted === true ? "blue" : "purple",
     fontWeight: "bold",
     fontSize: "20px",
@@ -15,7 +15,7 @@ export default function TodoItem({
   return (
     <>
       <div
-        className="text-center   p-2 w-200  m-2 bg-red-300   
+        className="text-center   p-2 w-200  m-2 bg-red-300  
 	
         border-2 border-solid max-w-lg  border-blue-200  px-5 py-3 rounded-xl "
       >
